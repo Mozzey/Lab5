@@ -26,9 +26,9 @@ namespace Factorials
                         // if valid do factorial calculation
                         result *= i;
                     }
-                // display factorial of user input
-                    Console.WriteLine(result);
                 }
+                // display factorial of user input
+                Console.WriteLine(result);
                 // use long type to store factorial
 
                 // factorial ex: 5! == 4*3*2*1 == 24
@@ -70,13 +70,13 @@ namespace Factorials
                 // prompt user to continue (only continue if user agrees)
                 Console.WriteLine("Would you like to play again? ( y/n )");
                 // store user response
-                char yOrN = char.Parse(Console.ReadLine().ToLower().Trim());
+                char yesOrNo = char.Parse(Console.ReadLine().ToLower().Trim());
                 // check for y or n
-                if (yOrN == 'y')
+                if (yesOrNo == 'y')
                 {
                     return true;
                 }
-                else if (yOrN == 'n')
+                else if (yesOrNo == 'n')
                 {
                     return false;
                 }
