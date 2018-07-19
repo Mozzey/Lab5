@@ -1,0 +1,11 @@
+C:\Users\Mozzey\GrandCircus\Labs\Lab5\Factorials\bin\Debug\netcoreapp2.1\Factorials.deps.json
+C:\Users\Mozzey\GrandCircus\Labs\Lab5\Factorials\bin\Debug\netcoreapp2.1\Factorials.runtimeconfig.json
+C:\Users\Mozzey\GrandCircus\Labs\Lab5\Factorials\bin\Debug\netcoreapp2.1\Factorials.runtimeconfig.dev.json
+C:\Users\Mozzey\GrandCircus\Labs\Lab5\Factorials\bin\Debug\netcoreapp2.1\Factorials.dll
+C:\Users\Mozzey\GrandCircus\Labs\Lab5\Factorials\bin\Debug\netcoreapp2.1\Factorials.pdb
+C:\Users\Mozzey\GrandCircus\Labs\Lab5\Factorials\obj\Debug\netcoreapp2.1\Factorials.csprojAssemblyReference.cache
+C:\Users\Mozzey\GrandCircus\Labs\Lab5\Factorials\obj\Debug\netcoreapp2.1\Factorials.csproj.CoreCompileInputs.cache
+C:\Users\Mozzey\GrandCircus\Labs\Lab5\Factorials\obj\Debug\netcoreapp2.1\Factorials.AssemblyInfoInputs.cache
+C:\Users\Mozzey\GrandCircus\Labs\Lab5\Factorials\obj\Debug\netcoreapp2.1\Factorials.AssemblyInfo.cs
+C:\Users\Mozzey\GrandCircus\Labs\Lab5\Factorials\obj\Debug\netcoreapp2.1\Factorials.dll
+C:\Users\Mozzey\GrandCircus\Labs\Lab5\Factorials\obj\Debug\netcoreapp2.1\Factorials.pdb
