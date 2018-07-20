@@ -14,7 +14,7 @@ namespace Factorials
                 // Greet the user
                 Console.WriteLine("Welcome to the Factorial Calculator!");
                 // prompt user to enter num from 1 to 10
-                Console.WriteLine("Please enter an integer that is greater than 0 but less than  10");
+                Console.WriteLine("Please enter an integer from 1 to 20!");
                 // store user input
                 userNum = long.Parse(Console.ReadLine());
                 // check if userNum is in range - if true calculate the factorial of the user input
@@ -52,7 +52,7 @@ namespace Factorials
         // method to check if user input is within range
         private static bool IsNumInRange(long userNumIn)
         {
-            if ((userNumIn > 0 && userNumIn < 10))
+            if ((userNumIn > 0 && userNumIn <= 25))
             {
                 return true;
             }
