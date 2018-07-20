@@ -6,6 +6,7 @@ namespace Factorials
     {
         static void Main(string[] args)
         {
+            // variables
             long userNum;
             bool isRunning = true;
             while (isRunning)
@@ -13,52 +14,51 @@ namespace Factorials
                 // Greet the user
                 Console.WriteLine("Welcome to the Factorial Calculator!");
                 // prompt user to enter num from 1 to 10
-                Console.WriteLine("Enter an integer that is greater than 0 but less than 10!");
-                // Store user input
+                Console.WriteLine("Please enter an integer that is greater than 0 but less than  10");
+                // store user input
                 userNum = long.Parse(Console.ReadLine());
-                long result = userNum;
-                // use a for loop for calculation
-                for (int i = 1; i < userNum; i++)
+                // check if userNum is in range - if true calculate the factorial of the user input
+                if (IsNumInRange(userNum))
                 {
-                    // check that user input is between 1 and 10
-                    if (IsNumInRange(userNum))
-                    {
-                        // if valid do factorial calculation
-                        result *= i;
-                    }
+                    // display factorial of user input
+                    Console.WriteLine(CalculateFactorial(userNum));
                 }
-                // display factorial of user input
-                Console.WriteLine(result);
-                // use long type to store factorial
-
-                // factorial ex: 5! == 4*3*2*1 == 24
+                else
+                {
+                    Console.WriteLine("Sorry but your input must be an integer greater than 0 and less than 10");
+                }
+                // end program on user input
                 if (!PlayAgain())
                 {
+                    // turn off flag
                     isRunning = false;
+                    // say buh bye
                     Console.WriteLine("Thanks for playing!");
                 }
             }
         }
-        // method to do factorial calculation on user input
-        public static long CalculateFactorial(long userNum)
+        // recursive algorithm for n!
+        private static long CalculateFactorial(long n)
         {
-            for (int i = 1; i < userNum; i++)
+            if (n == 1)
             {
-                userNum *= i;
-                
+                return 1;
             }
-            return userNum;
+            else
+            {
+                return n * CalculateFactorial(n - 1);
+            }
         }
         // method to check if user input is within range
         private static bool IsNumInRange(long userNumIn)
         {
-            if (!(userNumIn > 0 && userNumIn < 10))
+            if ((userNumIn > 0 && userNumIn < 10))
             {
-                return false;
+                return true;
             }
             else
             {
-                return true;
+                return false;
             }
         }
         // seerate method to ask if the user would like to terminate the program
